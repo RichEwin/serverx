@@ -1,0 +1,39 @@
+{
+  "name": "@rewin/serverx",
+  "version": "1.0.0",
+  "description": "Creates a server-only context using react’s cache()",
+  "homepage": "https://github.com/RichEwin/serverx",
+  "bugs": {
+    "url": "https://github.com/RichEwin/serverx/issues"
+  },
+  "author": "rich ewin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RichEwin/serverx.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+    "lint": "tsc"
+  },
+  "type": "module",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.cjs"
+    }
+  },
+  "license": "MIT",
+  "dependencies": {
+    "react": "^19.1.0",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.17.4"
+  }
+}
