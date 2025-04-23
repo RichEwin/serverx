@@ -1,6 +1,6 @@
 {
   "name": "@rewin/serverx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Creates a server-only context using react’s cache()",
   "homepage": "https://github.com/RichEwin/serverx",
   "bugs": {
