@@ -30,7 +30,7 @@ Create a typed context
 
 ```
 // context/index.ts
-import { contextFactory } from 'server-context-factory';
+import { contextFactory } from '@rewin/serverx';
 
 export const [getUserName, setUserName] = contextFactory<string>('username');
 ```
